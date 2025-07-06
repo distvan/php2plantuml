@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  php-cli:
+    build: ./docker/php
+    volumes:
+      - ./:/app
+    stdin_open: true
+    tty: true
